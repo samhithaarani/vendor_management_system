@@ -55,15 +55,15 @@ The project consists of the following components:
 
 ### Screenshots for implemented API Endpoint
 
-● POST /api/vendors/: Create a new vendor.
-  ![Screenshot](screenshots/post.png)
-● GET /api/vendors/: List all vendors.
-  ![Screenshot](screenshots/getall.png)
-● GET /api/vendors/{vendor_id}/: Retrieve a specific vendor's details.
-  ![Screenshot](screenshots/spid.png)
-● PUT /api/vendors/{vendor_id}/: Update a vendor's details.
- DELETE /api/vendors/{vendor_id}/: Delete a vendor.
-   ![Screenshot](screenshots/put.png)
+   ● POST /api/vendors/: Create a new vendor.
+     ![Screenshot](screenshots/post.png)
+   ● GET /api/vendors/: List all vendors.
+     ![Screenshot](screenshots/getall.png)
+   ● GET /api/vendors/{vendor_id}/: Retrieve a specific vendor's details.
+     ![Screenshot](screenshots/spid.png)
+   ● PUT /api/vendors/{vendor_id}/: Update a vendor's details.
+    DELETE /api/vendors/{vendor_id}/: Delete a vendor.
+      ![Screenshot](screenshots/put.png)
 
 
 ### Purchase Order Tracking
@@ -74,15 +74,32 @@ The project consists of the following components:
 
 ### Screenshots for implemented API Endpoint
 
-● POST /api/vendors/: Create a new vendor.
-  ![Screenshot](screenshots/p1post.png)
-● GET /api/vendors/: List all vendors.
-  ![Screenshot](screenshots/p1getall.png)
-● GET /api/vendors/{vendor_id}/: Retrieve a specific vendor's details.
-● PUT /api/vendors/{vendor_id}/: Update a vendor's details.
- ![Screenshot](screenshots/put.png)
- DELETE /api/vendors/{vendor_id}/: Delete a vendor.
-   ![Screenshot](screenshots/p1delete.png)
+   ● POST /api/vendors/: Create a new vendor.
+     ![Screenshot](screenshots/p1post.png)
+   ● GET /api/vendors/: List all vendors.
+     ![Screenshot](screenshots/p1getall.png)
+   ● GET /api/vendors/{vendor_id}/: Retrieve a specific vendor's details.
+   ● PUT /api/vendors/{vendor_id}/: Update a vendor's details.
+    ![Screenshot](screenshots/put.png)
+    DELETE /api/vendors/{vendor_id}/: Delete a vendor.
+      ![Screenshot](screenshots/p1delete.png)
+
+
+● Vendor Performance Endpoint (GET /api/vendors/{vendor_id}/performance):
+● Retrieves the calculated performance metrics for a specific vendor.
+● Should return data including on_time_delivery_rate, quality_rating_avg,
+average_response_time, and fulfillment_rate.
+![Screenshot](screenshots/performence.png)
+
+● Update Acknowledgment Endpoint:
+● While not explicitly detailed in the previous sections, consider an endpoint like
+POST /api/purchase_orders/{po_id}/acknowledge for vendors to acknowledge
+POs.
+● This endpoint will update acknowledgment_date and trigger the recalculation
+of average_response_time.
+
+![Screenshot](screenshots/ack.png)
+
 
 
 
