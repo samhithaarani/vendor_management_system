@@ -14,6 +14,7 @@ class Vendor(models.Model):
 
     def __str__(self):
         return self.name
+
 class PurchaseOrder(models.Model):
     po_number = models.CharField(max_length=100, unique=True)
     vendor = models.ForeignKey(Vendor, on_delete=models.CASCADE)
